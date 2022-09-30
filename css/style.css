@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 60%);
+    z-index: -1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(79, 155, 255), rgb(162, 0, 255));
+    clip-path: circle(20% at 10% 10%);
+    z-index: -1;
+}
+
+.glass-panel
+{
+    width:80vw;
+    height:90vh;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border-left: 1px rgba(255, 255, 255, 0.3) solid;
+    border-top: 1px rgba(255, 255, 255, 0.3) solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.side-panel
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 200px;
+    max-width: 400px;
+    width:30%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255,255,255,0.2));
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.side-panel img
+{
+    width:30%;
+    clip-path: circle(40% at 50% 40% );
+}
+.side-panel h2
+{
+    margin: 0 0 50px 0;
+    font-size: 1.8em;
+
+}
+.side-panel ul li
+{
+    list-style: none;
+    padding: 30px 0px;
+    font-size: 1.2em;
+}
+.side-panel ul li.active a
+{
+    font-weight: 700;
+}
+
+.side-panel ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.content-panel
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    color: white;
+}
