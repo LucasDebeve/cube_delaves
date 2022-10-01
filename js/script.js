@@ -9,4 +9,7 @@ navbar.forEach(element =>
 
             this.classList.add("active");
         })
-    })
+    });
+
+
+

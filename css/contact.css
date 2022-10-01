@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+.side-panel
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 200px;
+    max-width: 400px;
+    width:30vw;
+    height: 100vh;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.3),rgba(255,255,255,0.1));
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.side-panel img
+{
+    margin-top: 20%;
+    width:40%;
+    border-radius: 100%;
+    border: 2px white solid;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.side-panel h2
+{
+    font-size: 1.8em;
+    text-align: center;
+    margin: 10% 0 10% 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.side-panel nav
+{
+    height: 80%;
+    width:100%;
+}
+
+.side-panel ul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.side-panel ul li
+{
+    list-style: none;
+    font-size: 1.2em;
+    padding-left: 25% ;
+}
+.side-panel ul li.active a
+{
+    font-weight: 700;
+}
+
+.side-panel ul li a
+{
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.side-panel ul li a i
+{
+    font-size: 1.2em;
+    margin-right: 7%;
+}
